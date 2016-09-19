@@ -1,0 +1,15 @@
+Source: docker-compose-bin
+Section: unknown
+Priority: optional
+Maintainer: Cheng-Ching Huang <cchuang@bigobject.io>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/docker/compose
+
+Package: docker-compose-bin
+Provides: docker-compose
+Architecture: all
+Depends: curl, help2man, ${misc:Depends}
+Description: Binary docker-compose from github release
+ This binary docker-compose is downloaded from https://github.com/docker/compose/releases/download/1.8.0/
+

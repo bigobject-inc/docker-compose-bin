@@ -1,0 +1,5 @@
+docker-compose-bin (1.8.0) unstable; urgency=medium
+
+  * Initial Release.
+
+ -- Cheng-Ching Huang <cchuang@bigobject.io>  Mon, 19 Sep 2016 14:00:50 +0800
