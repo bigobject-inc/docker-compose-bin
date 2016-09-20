@@ -9,7 +9,7 @@ Homepage: https://github.com/docker/compose
 Package: docker-compose-bin
 Provides: docker-compose
 Architecture: all
-Depends: curl, help2man, ${misc:Depends}
+Depends: curl, help2man, docker-engine, ${misc:Depends}
 Description: Binary docker-compose from github release
  This binary docker-compose is downloaded from https://github.com/docker/compose/releases/download/1.8.0/
 
