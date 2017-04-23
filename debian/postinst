@@ -18,10 +18,11 @@ set -e
 # the debian-policy package
 
 TARGET=/usr/bin/docker-compose
+VERSION="1.12.0"
 
 case "$1" in
     configure)
-		/usr/bin/curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > $TARGET
+		/usr/bin/curl -L https://github.com/docker/compose/releases/download/$VERSION/docker-compose-`uname -s`-`uname -m` > $TARGET
 		chmod +x /usr/bin/docker-compose
 		/usr/bin/help2man $TARGET | gzip > /usr/share/man/man1/docker-compose.1.gz
     ;;
